@@ -1,13 +1,15 @@
 import { HTTP } from './http';
-
 import type { ApiConfig, User } from '../types';
+
 export class Users {
+  static $inject = ['apiConfig', 'http'];
+
   http: HTTP;
   apiConfig: ApiConfig;
 
-  constructor(apiConfig: ApiConfig) {
-    this.http = new HTTP(apiConfig);
+  constructor(apiConfig: ApiConfig, http: HTTP) {
     this.apiConfig = apiConfig;
+    this.http = http;
   }
 
   getUsers() {
