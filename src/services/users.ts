@@ -1,8 +1,8 @@
-import { HTTP } from "./http";
-import type { ApiConfig, User } from "../types";
+import { HTTP } from './http';
+import type { ApiConfig, User } from '../types';
 
 export class Users {
-  static $inject = ["apiConfig", "http"];
+  static $inject = ['apiConfig', 'http'];
 
   http: HTTP;
   apiConfig: ApiConfig;

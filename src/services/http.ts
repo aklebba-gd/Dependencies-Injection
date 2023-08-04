@@ -1,8 +1,8 @@
-import { Logger } from "./logger";
-import type { ApiConfig } from "../types";
+import { Logger } from './logger';
+import type { ApiConfig } from '../types';
 
 export class HTTP {
-  static $inject = ["apiConfig", "logger"];
+  static $inject = ['apiConfig', 'logger'];
 
   logger: Logger;
   apiConfig: ApiConfig;
